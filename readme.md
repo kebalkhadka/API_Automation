@@ -1,6 +1,8 @@
 # Playwright High-Scale API Differential Testing Framework
 
-An industrial production-grade framework engineered to run multi-environment payload delta analysis across large end-points concurrently using Playwright, Node.js 20+, and Deep-Diff structural sorting algorithms.
+**Author:** Kebal Khadka
+
+An production-grade framework engineered to run multi-environment payload delta analysis across large end-points concurrently using Playwright, Node.js 20+, and Deep-Diff structural sorting algorithms.
 
 ## Design Architecture Blueprint
 - **Dynamic Worker Parallelization**: Dynamically transforms `apis.json` definition array layouts into parallelized execution steps leveraging independent worker processes.
@@ -28,3 +30,4 @@ npm run test:group -- "@smoke"
 
 # Force sequential execution on environment tracking layers
 npm run test:serial
+ 
