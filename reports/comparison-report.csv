@@ -1,0 +1,6 @@
+API Name,Status,Old Status,New Status,Old Duration(ms),New Duration(ms),Errors
+"Compare API [POST] /posts @write @regression","PASSED",201,201,1388,388,""
+"Compare API [PUT] /posts/1 @write","PASSED",200,200,1389,388,""
+"Compare API [GET] /users @smoke @identity","PASSED",200,200,1384,338,""
+"has title","PASSED",,,,,""
+"get started link","PASSED",,,,,""

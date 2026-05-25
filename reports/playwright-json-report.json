@@ -1,0 +1,387 @@
+{
+  "config": {
+    "configFile": "C:\\Playwright_api\\playwright.config.ts",
+    "rootDir": "C:/Playwright_api/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Playwright_api/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Playwright_api/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-json-report.json"
+        }
+      ],
+      [
+        "C:\\Playwright_api\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ],
+      [
+        "C:\\Playwright_api\\utils\\reporter.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api-comparison.spec.ts",
+      "file": "api-comparison.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Compare API [GET] /users @smoke @identity",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "identity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "comparison_meta",
+                  "description": "{\"oldStatus\":200,\"newStatus\":200,\"durationOld\":1384,\"durationNew\":338}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Fetch Current production system target state",
+                      "duration": 1387
+                    },
+                    {
+                      "title": "Fetch New release target candidate state",
+                      "duration": 340
+                    },
+                    {
+                      "title": "Sanitize and compare structural telemetry states",
+                      "duration": 2
+                    }
+                  ],
+                  "startTime": "2026-05-25T16:24:52.999Z",
+                  "annotations": [
+                    {
+                      "type": "comparison_meta",
+                      "description": "{\"oldStatus\":200,\"newStatus\":200,\"durationOld\":1384,\"durationNew\":338}"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "Sanitized Production Payload",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJuYW1lIjogIkxlYW5uZSBHcmFoYW0iLAogICAgInVzZXJuYW1lIjogIkJyZXQiLAogICAgImVtYWlsIjogIlNpbmNlcmVAYXByaWwuYml6IiwKICAgICJhZGRyZXNzIjogewogICAgICAic3RyZWV0IjogIkt1bGFzIExpZ2h0IiwKICAgICAgInN1aXRlIjogIkFwdC4gNTU2IiwKICAgICAgImNpdHkiOiAiR3dlbmJvcm91Z2giLAogICAgICAiemlwY29kZSI6ICI5Mjk5OC0zODc0IiwKICAgICAgImdlbyI6IHsKICAgICAgICAibGF0IjogIi0zNy4zMTU5IiwKICAgICAgICAibG5nIjogIjgxLjE0OTYiCiAgICAgIH0KICAgIH0sCiAgICAicGhvbmUiOiAiMS03NzAtNzM2LTgwMzEgeDU2NDQyIiwKICAgICJjb21wYW55IjogewogICAgICAibmFtZSI6ICJSb21hZ3VlcmEtQ3JvbmEiLAogICAgICAiY2F0Y2hQaHJhc2UiOiAiTXVsdGktbGF5ZXJlZCBjbGllbnQtc2VydmVyIG5ldXJhbC1uZXQiLAogICAgICAiYnMiOiAiaGFybmVzcyByZWFsLXRpbWUgZS1tYXJrZXRzIgogICAgfQogIH0KXQ=="
+                    },
+                    {
+                      "name": "Sanitized Candidate Release Payload",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJuYW1lIjogIkxlYW5uZSBHcmFoYW0iLAogICAgInVzZXJuYW1lIjogIkJyZXQiLAogICAgImVtYWlsIjogIlNpbmNlcmVAYXByaWwuYml6IiwKICAgICJhZGRyZXNzIjogewogICAgICAic3RyZWV0IjogIkt1bGFzIExpZ2h0IiwKICAgICAgInN1aXRlIjogIkFwdC4gNTU2IiwKICAgICAgImNpdHkiOiAiR3dlbmJvcm91Z2giLAogICAgICAiemlwY29kZSI6ICI5Mjk5OC0zODc0IiwKICAgICAgImdlbyI6IHsKICAgICAgICAibGF0IjogIi0zNy4zMTU5IiwKICAgICAgICAibG5nIjogIjgxLjE0OTYiCiAgICAgIH0KICAgIH0sCiAgICAicGhvbmUiOiAiMS03NzAtNzM2LTgwMzEgeDU2NDQyIiwKICAgICJjb21wYW55IjogewogICAgICAibmFtZSI6ICJSb21hZ3VlcmEtQ3JvbmEiLAogICAgICAiY2F0Y2hQaHJhc2UiOiAiTXVsdGktbGF5ZXJlZCBjbGllbnQtc2VydmVyIG5ldXJhbC1uZXQiLAogICAgICAiYnMiOiAiaGFybmVzcyByZWFsLXRpbWUgZS1tYXJrZXRzIgogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7f6aa3b89024e92fb0-56c7823622da31022288",
+          "file": "api-comparison.spec.ts",
+          "line": 23,
+          "column": 7
+        },
+        {
+          "title": "Compare API [POST] /posts @write @regression",
+          "ok": true,
+          "tags": [
+            "write",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "comparison_meta",
+                  "description": "{\"oldStatus\":201,\"newStatus\":201,\"durationOld\":1388,\"durationNew\":388}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Fetch Current production system target state",
+                      "duration": 1392
+                    },
+                    {
+                      "title": "Fetch New release target candidate state",
+                      "duration": 390
+                    },
+                    {
+                      "title": "Sanitize and compare structural telemetry states",
+                      "duration": 2
+                    }
+                  ],
+                  "startTime": "2026-05-25T16:24:52.920Z",
+                  "annotations": [
+                    {
+                      "type": "comparison_meta",
+                      "description": "{\"oldStatus\":201,\"newStatus\":201,\"durationOld\":1388,\"durationNew\":388}"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "Sanitized Production Payload",
+                      "contentType": "application/json",
+                      "body": "ewogICJ0aXRsZSI6ICJmb28iLAogICJib2R5IjogImJhciIsCiAgInVzZXJJZCI6IDEKfQ=="
+                    },
+                    {
+                      "name": "Sanitized Candidate Release Payload",
+                      "contentType": "application/json",
+                      "body": "ewogICJ0aXRsZSI6ICJmb28iLAogICJib2R5IjogImJhciIsCiAgInVzZXJJZCI6IDEKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7f6aa3b89024e92fb0-2f93056e5c13b6fdf2f1",
+          "file": "api-comparison.spec.ts",
+          "line": 23,
+          "column": 7
+        },
+        {
+          "title": "Compare API [PUT] /posts/1 @write",
+          "ok": true,
+          "tags": [
+            "write"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "comparison_meta",
+                  "description": "{\"oldStatus\":200,\"newStatus\":200,\"durationOld\":1389,\"durationNew\":388}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1838,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Fetch Current production system target state",
+                      "duration": 1394
+                    },
+                    {
+                      "title": "Fetch New release target candidate state",
+                      "duration": 390
+                    },
+                    {
+                      "title": "Sanitize and compare structural telemetry states",
+                      "duration": 1
+                    }
+                  ],
+                  "startTime": "2026-05-25T16:24:52.919Z",
+                  "annotations": [
+                    {
+                      "type": "comparison_meta",
+                      "description": "{\"oldStatus\":200,\"newStatus\":200,\"durationOld\":1389,\"durationNew\":388}"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "Sanitized Production Payload",
+                      "contentType": "application/json",
+                      "body": "ewogICJ0aXRsZSI6ICJwYXRjaGVkLWZvbyIsCiAgImJvZHkiOiAicGF0Y2hlZC1iYXIiLAogICJ1c2VySWQiOiAxCn0="
+                    },
+                    {
+                      "name": "Sanitized Candidate Release Payload",
+                      "contentType": "application/json",
+                      "body": "ewogICJ0aXRsZSI6ICJwYXRjaGVkLWZvbyIsCiAgImJvZHkiOiAicGF0Y2hlZC1iYXIiLAogICJ1c2VySWQiOiAxCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7f6aa3b89024e92fb0-c545ca923c87c7f52269",
+          "file": "api-comparison.spec.ts",
+          "line": 23,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4648,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-25T16:24:52.949Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 5274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-25T16:24:52.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-25T16:24:51.669Z",
+    "duration": 7011.518,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

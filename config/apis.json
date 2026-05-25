@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Get All Users List",
+    "method": "GET",
+    "path": "/users",
+    "tags": ["smoke", "identity"],
+    "params": {
+      "id": "1"
+    }
+  },
+  {
+    "name": "Create Prototype Post",
+    "method": "POST",
+    "path": "/posts",
+    "tags": ["write", "regression"],
+    "body": {
+      "title": "foo",
+      "body": "bar",
+      "userId": 1
+    }
+  },
+  {
+    "name": "Update User Target",
+    "method": "PUT",
+    "path": "/posts/1",
+    "tags": ["write"],
+    "body": {
+      "id": 1,
+      "title": "patched-foo",
+      "body": "patched-bar",
+      "userId": 1
+    }
+  }
+]
